@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Nose</title>
-    <style media="screen">
-      h1,h2{
-color:white;
-      }
-    </style>
-  </head>
-  <body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te quiero mucho cuycito</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Inserta la canción que deseas aquí -->
+    <audio autoplay loop>
+        <source src="cuypequeñito.mp3" type="audio/mp3">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
 
-    <h1>NO puedo por que no se si me gusta, o no.</h1>
-    <h2>uhummm....</h2>
-    <p>.</p>
-    <p>.</p>
-    <!-- Ademas creo que no podria estar con ella -->
-  </body>
+    <div class="container">
+        <!-- Aquí es donde debes insertar la imagen del cuy desde tu ordenador -->
+        <img src="cuy.png" alt="Cuy con corazón" class="cuy-image">
+
+        <h1>Te quiero mucho cuycito</h1>
+        <p id="question">¿Me quieres?</p>
+        <div class="button-container">
+            <button id="yes" class="btn" onclick="handleYes()">Sí</button>
+            <button id="no" class="btn" onclick="handleNo()">No</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
